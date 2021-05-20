@@ -100,7 +100,19 @@
                 "*"
             );
         }
+        
+        function back() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "@go-back"
+                }),
+                "*"
+            );
+        }
     </script>
+    
+    <img src="https://cdn.yellowmessenger.com/f48TFdZWekJJ1621529460336.png" alt="" style="float: left;width:25px;height:25px;max-width: 40px;max-height: 40px;margin-right: 5px;" onclick="back()">
     <h5 id = "heading"><b>Please choose from the options below</b> 💁‍♀</h5>
     <center>
         <button type="button" onclick="higgs()" class="primary-btn text-left">
