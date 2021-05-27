@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-           body {
-            font-family:'Lato'
+        body {
+            font-family: 'Lato';
         }
+
         h5 {
             margin: 20px 0px 20px 0px;
-            font-family:'Lato';
-            font-weight: bold;
+            font-family: 'Lato';
+                          font-weight: bold;
 
         }
-        
+
+        img {
+            vertical-align: middle;
+            max-width: 30px;
+            width: 20px;
+            max-height: 100%;
+            margin: 0%;
+            padding-right: 2px;
+        }
+
         
         
         .image:hover {
@@ -24,37 +38,32 @@
   transform: translateY(4px);
   
 }
-        img {
-            vertical-align: middle;
-            max-width: 50px;
-            width: 100px;
-            /* height: 50px; */
-            max-height: 100%;
-            margin: 0%;
-            padding-right: 2px;
-        }
         button {
             padding: 2px;
-            margin: 0.5% 1% 1% 1%;
-            width: 55%;
-            float:left;
-            /*max-width: 97%;*/
-            height: 60px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 50px;
             font-size: 12px;
             font-weight: bold;
             border-radius: 10px;
             border: 2px solid steelblue;
             -webkit-border-radius: 10px;
             background-color: white;
-             font-family:'Lato'
+            font-family: 'Lato';
         }
-        
         button:hover {
             -webkit-box-shadow: 100px 600px 500px #ccc;
             box-shadow: 2px 6px 5px #ccc;
             -moz-box-shadow: 100px 600px 100px #ccc;
             border: 3px solid #385072;
             -moz-border-radius: 10px;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
         }
         button {
             padding: 5px;
@@ -173,41 +182,41 @@
     
         <h5 id = "heading"><b>Please choose the article below </b></h5>
     <center>
-        <button type="button" onclick="Island()" class="primary-btn text-left">
+        <button type="button" onclick="Island()"class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/ejDdYLmyjByb1622130394434.png" alt="Place Holder" />
            Island King
         </button>
 
-        <button type="button" onclick="Domino()" class="primary-btn text-left">
+        <button type="button" onclick="Domino()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/kDWigRmUyb0c1622130297857.png" alt="Place Holder" />
           Higgs Domino
         </button>
 
 
-        <button type="button" onclick="higgs()" class="primary-btn text-left">
+        <button type="button" onclick="higgs()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/QcNWIA7t2F1w1621310656950.png" alt="Place Holder" />
             Mitra Higgs Domino
         </button>
-        <button type="button" onclick="pubg()" class="primary-btn text-left">
+        <button type="button" onclick="pubg()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/DIUwoQ3dXJW11621310916023.png" alt="Place Holder" />
             PUBG Royale Pass
         </button>
-        <button type="button" onclick="mlbp()" class="primary-btn text-left">
+        <button type="button" onclick="mlbp()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/FuXxevambEXI1621263064445.png" alt="Place Holder" />
             MLBB: Freya
         </button>
-        <button type="button" onclick="rag()" class="primary-btn text-left">
+        <button type="button" onclick="rag()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/XATl6jiNXKzw1621270097191.png" alt="Place Holder" />
             Ragnarok M
         </button>
 
-        <button type="button" onclick="sgame()" class="primary-btn text-left">
+        <button type="button" onclick="sgame()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/ebAbcs9HBMzC1621257918055.png" alt="Place Holder" />
             Instal Game Steam
         </button>
 
 
-        <button type="button" onclick="klaim()" class="primary-btn text-left">
+        <button type="button" onclick="klaim()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/ejDdYLmyjByb1622130394434.png" alt="Place Holder" />
             Klaim Item Island King
         </button>
