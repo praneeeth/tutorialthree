@@ -109,6 +109,49 @@
                 "*"
             );
         }
+        function Island() {
+            console.log("4")
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "island king ID"
+                }),
+                "*"
+            );
+        }
+
+         function Domino() {
+            console.log("4")
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "Where Can I Find the Higgs Domino ID"
+                }),
+                "*"
+            );
+        }
+
+         function sgame() {
+            console.log("4")
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "How to install games on the Steam application"
+                }),
+                "*"
+            );
+        }
+
+        function klaim() {
+            console.log("4")
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "How to install games on the Steam application"
+                }),
+                "*"
+            );
+        }
         
         function back() {
             window.parent.postMessage(
@@ -130,6 +173,17 @@
     
         <h5 id = "heading"><b>Please choose the article below </b></h5>
     <center>
+        <button type="button" onclick="Island()" class="primary-btn text-left">
+            <img src="https://cdn.yellowmessenger.com/ejDdYLmyjByb1622130394434.png" alt="Place Holder" />
+           Island King
+        </button>
+
+        <button type="button" onclick="Domino()" class="primary-btn text-left">
+            <img src="https://cdn.yellowmessenger.com/kDWigRmUyb0c1622130297857.png" alt="Place Holder" />
+          Higgs Domino
+        </button>
+
+
         <button type="button" onclick="higgs()" class="primary-btn text-left">
             <img src="https://cdn.yellowmessenger.com/QcNWIA7t2F1w1621310656950.png" alt="Place Holder" />
             Mitra Higgs Domino
@@ -146,6 +200,19 @@
             <img src="https://cdn.yellowmessenger.com/XATl6jiNXKzw1621270097191.png" alt="Place Holder" />
             Ragnarok M
         </button>
+
+        <button type="button" onclick="sgame()" class="primary-btn text-left">
+            <img src="https://cdn.yellowmessenger.com/ebAbcs9HBMzC1621257918055.png" alt="Place Holder" />
+            Instal Game Steam
+        </button>
+
+
+        <button type="button" onclick="klaim()" class="primary-btn text-left">
+            <img src="https://cdn.yellowmessenger.com/ejDdYLmyjByb1622130394434.png" alt="Place Holder" />
+            Klaim Item Island King
+        </button>
+
+
     </center>
 </body>
 </html>
