@@ -209,6 +209,15 @@
                 "*"
             );
         }
+            function back() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "@go-back"
+                }),
+                "*"
+            );
+        }
     </script>
     <div class = "image">
     <img src="https://cdn.yellowmessenger.com/KseiGAPc8y401621566579976.jpeg" alt="" style="float: right;width:25px;height:25px;max-width: 40px;max-height: 40px;margin-right: 4px;" onclick="back()">
@@ -238,6 +247,9 @@
         </button>
          <button type="button" onclick="withdraw()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/ejDdYLmyjByb1622130394434.png" alt="Place Holder" /> <span> Tarik Dana Game Island King</span>
+        </button>
+        <button type="button" onclick="iceandfire()" class="right primary-btn col-xs-11 text-left">
+            <img src="https://cdn.yellowmessenger.com/IYWdl1E31bRd1628677541786.jpg" alt="Place Holder" /> <span> Rise of Empires: Ice and Fire</span>
         </button>
 </body>
 </html>
