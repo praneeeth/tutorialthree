@@ -200,6 +200,15 @@
                 "*"
             );
         }
+             function fireice() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "How To Claim The Battle Exchange Medal In Rise of Empires: Ice and Fire Game"
+                }),
+                "*"
+            );
+        }
         function back() {
             window.parent.postMessage(
                 JSON.stringify({
@@ -238,6 +247,9 @@
         </button>
          <button type="button" onclick="withdraw()" class="right primary-btn col-xs-11 text-left">
             <img src="https://cdn.yellowmessenger.com/ejDdYLmyjByb1622130394434.png" alt="Place Holder" /> <span> Tarik Dana Game Island King</span>
+        </button>
+        <button type="button" onclick="fireice()" class="right primary-btn col-xs-11 text-left">
+            <img src="https://cdn.yellowmessenger.com/Boqf9JS89Ema1628764512501.jpg" alt="Place Holder" /> <span> Rise of Empires: Ice and Fire</span>
         </button>
 </body>
 </html>
