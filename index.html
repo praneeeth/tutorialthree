@@ -200,15 +200,6 @@
                 "*"
             );
         }
-        function back() {
-            window.parent.postMessage(
-                JSON.stringify({
-                    event_code: "ym-client-event",
-                    data: "@go-back"
-                }),
-                "*"
-            );
-        }
             function iceandfire() {
             window.parent.postMessage(
                 JSON.stringify({
@@ -218,6 +209,16 @@
                 "*"
             );
         }
+        function back() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "@go-back"
+                }),
+                "*"
+            );
+        }
+            
     </script>
     <div class = "image">
     <img src="https://cdn.yellowmessenger.com/KseiGAPc8y401621566579976.jpeg" alt="" style="float: right;width:25px;height:25px;max-width: 40px;max-height: 40px;margin-right: 4px;" onclick="back()">
